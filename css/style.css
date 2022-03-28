@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "cairo", sans-serif;
+  }
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+}
+header{
+    background-color: #f8f8f8;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px #ddd;
+    -moz-box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ddd;
+}
+header .row div:nth-child(2){
+    /* font-size: 27px; */
+    text-align: center;
+}
+header .row div:first-child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+header .row div:first-child img{
+    width: 200px;
+    height: auto;
+}
+header .row div:nth-child(2) h3{
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #264143;
+
+}
+.menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+.header li{
+    position: relative;
+    padding: 30px 2px;
+    text-align: center;
+    background-color: #eee;
+    margin-bottom: 20px;
+}
+.header > li > a,
+.top_nav a{
+    color: #000;
+    font-size: 17px;
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+.header > li > a::before{
+    content: "";
+  position: absolute;
+  width: 0%;
+  height: 6px;
+  background-color: #a1a1a1;
+  bottom: 0;
+  left: 0;
+  transition: all .5s ease-in-out;
+}
+.header > li > a:hover:before{
+    width: 100%;
+    left: 0;
+}
+.header > li > a.active::before{
+    width: 100%;
+}
+.top_nav{
+    /* display:flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+    justify-content:center; */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* margin: 20px auto; */
+}
+
+.top_nav a{
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+    height: 80px;
+}
+.top_nav .row div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: start;
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
