@@ -107,3 +107,9 @@ header .row div:nth-child(2) h3{
 p{
     text-align: justify;
 }
+.advertisment img{
+    width: 112%;
+    height: 100%;
+    position: relative;
+    padding: 0 29px;
+}
