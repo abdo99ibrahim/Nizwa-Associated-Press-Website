@@ -13,7 +13,7 @@ a{
     text-decoration: none !important;
 }
 header{
-    background-color: #f8f8f8;
+    background-color: #1f2635;
     position: relative;
     -webkit-box-shadow: 0 0 10px #ddd;
     -moz-box-shadow: 0 0 10px #ddd;
@@ -36,7 +36,7 @@ header .row div:first-child img{
 header .row div:nth-child(2) h3{
     letter-spacing: 2px;
     font-weight: 500;
-    color: #264143;
+    color: #f8f8f8;
 
 }
 .menu{
@@ -48,15 +48,18 @@ header .row div:nth-child(2) h3{
 }
 .header li{
     position: relative;
+    border-radius: 2px;
     padding: 30px 2px;
     text-align: center;
-    background-color: #eee;
+    background-color: #bcccee;
     margin-bottom: 20px;
 }
 .header > li > a,
 .top_nav a{
     color: #000;
     font-size: 17px;
+    font-weight: 500;
+    letter-spacing: .2px;
     transition: all .5s ease-in-out;
     overflow: hidden;
 }
@@ -64,8 +67,8 @@ header .row div:nth-child(2) h3{
     content: "";
   position: absolute;
   width: 0%;
-  height: 6px;
-  background-color: #a1a1a1;
+  height: 3px;
+  background-color: #1f2635;;
   bottom: 0;
   left: 0;
   transition: all .5s ease-in-out;
@@ -73,6 +76,7 @@ header .row div:nth-child(2) h3{
 .header > li > a:hover:before{
     width: 100%;
     left: 0;
+    border-radius: 5px;
 }
 .header > li > a.active::before{
     width: 100%;
@@ -89,13 +93,17 @@ header .row div:nth-child(2) h3{
 }
 
 .top_nav a{
-    background-color: #eee;
+    border-radius: 4px;
+    background-color: #bcccee;;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0px 5px;
     height: 80px;
+}
+.top_nav a:hover{
+    color: #1f2635;
 }
 .top_nav .row div{
     display: flex;
@@ -117,4 +125,7 @@ header .row div:nth-child(2) h3{
     height: 100%;
     position: relative;
     padding: 0 29px;
+}
+aside{
+    background-color: #c3cde21c;
 }
